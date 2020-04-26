@@ -48,9 +48,7 @@ li{
 .h1{
   text-align: center;
 }
-.a{
 
-}
 .footer{
   position: fixed;
   left: 0;
@@ -124,13 +122,15 @@ li{
 }
 
 .grid-main > div {
-  text-align: center;
+  text-align: left;
   border-style: groove;
+  padding: 0 2px 0 2px;
 }
+
 
 .grid {
   display: grid;
-  grid-template-columns: 250px auto 250px;
+  grid-template-columns: 15% auto 10%;
   grid-template-rows: repeat(1, 500px);
   grid-gap: 1em;
   padding: 0px;
@@ -138,29 +138,31 @@ li{
 }
 
 .grid h1 {
-  color: white;
+  color: black;
 }
 
-.grid font {
-  color: deeppink;
-}
 
 .sidebar-left {
-  padding: 0px 5px 5px 20px;
-  background-color: darkgray;
+  border-bottom: 2px solit darkgray;
+  /*padding: 1px 5px 5px 20px;*/
+  background-color: lightgrey;
   grid-row: 1;
   grid-column: 1/2;
 }
+.sidebar-left h1 {
+  padding: 1px 5px 5px 20px;
+}
+
 article {
   padding: 0px 5px 5px 20px;
-  background-color: darkgray;
+  background-color: lightgrey;
   grid-row: 1;
   grid-column: 2/3;
 }
 
 .sidebar-right{
   padding: 0px 5px 5px 20px;
-  background-color: darkgray;
+  background-color: lightgrey;
   grid-row: 1;
   grid-column: 3 /4;
 }
@@ -193,3 +195,31 @@ article {
   background-color: #1c9dd9;
   color: white;
 }
+
+/* SideNav*/
+.Sidenav {
+  background-color: lightgrey;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.Sidenav a {
+  display: block;
+  width: auto;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.Sidenav a:hover {
+  background-color: slategrey;
+  color: whitesmoke;
+}
+
+/* Add a color to the active/current link */
+.Sidenav a.active {
+  background-color: #1c9dd9;
+  color: white;}

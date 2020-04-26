@@ -6,142 +6,54 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>Studenten</h1>
+<header>
+    <br>
+    <a href="Index.html"><img src="hsos-logo-neu.png" class="logo" alt="hslogo"></a>
+    <br>
+    <nav class="topnav">
+        <a class="active" href="Index.html">Meine Gruppen</a>
+        <a href="#news">Neue Gruppenarbeit</a>
+    </nav>
+</header>
 
-<table border="1" width="1000"> <!-- Umrandung machen-->
+<section>
+    <div class="grid">
+        <aside class="sidebar-left">
+            <h1>Meine Gruppen</h1>
+            <nav class="Sidenav">
 
-    <tr>
+                <a class="active" href="WebTechGroup.html">WebTech</a>
+                <a href="PPSGroup.html">PPS</a>
+                <a href="RechNetGroup.html">Rechennetzer und Betriebssysteme</a>
+                <a href="FinanzierungGroup.html">Finanzierung</a>
 
-        <td valign="top" width="200"><br><a href="WebTech%20Mockup1.html">Sommersemester 20</a><br>
-            <ul>
-                <li>Modul 1</li>
-                <ul><li>Thema 1</li></ul>
-                <li>Modul 2</li>
-            </ul><br>
-            Wintersemester 19/20 <br>
-            <ul>
-                <li>Modul 1</li>
-                <li>Modul 2</li>
-                <li>Modul 3</li>
-            </ul>
-        </td>
+            </nav>
 
-        <td valign="top">
-            <h2><u>Modul 1: Thema 1</u></h2>
-            <table>
-                <tr>
-                    <td><ul>Beschreibung</ul></td>
-                    <td><ul>Gruppenmitglieder</ul></td>
-                </tr>
-                <tr>
-                    <td>
-                        <ul>
-                            <textarea></textarea>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <textarea></textarea>
+        </aside>
 
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td><ul>Links</ul></td>
-                    <td><ul>Termine</ul></td>
-                </tr>
-                <tr>
-                    <td><ul><textarea></textarea></ul></td>
-                    <td><ul><table border=1 id=’calendar‘>
-                        <tr style=’visibility:collapse;‘ hidden>
-                            <td colspan=7 id=’date_memory‘>—</td>
-                        </tr>
-                        <tr>
-                            <td class=’calendar_head‘><a class=’calendar_link‘
-                                                         href=’javascript:prevMonth()‘> &laquo;</a></td>
-                            <td colspan=5 class=’calendar_head_month‘ id=’calendar_month‘>
-                                —</td>
-                            <td class=’calendar_head‘><a class=’calendar_link‘
-                                                         href=’javascript:nextMonth()‘> &raquo;</a></td>
-                        </tr>
-                        <tr>
-                            <td class=’calendar_day‘>Mo</td>
-                            <td class=’calendar_day‘>Di</td>
-                            <td class=’calendar_day‘>Mi</td>
-                            <td class=’calendar_day‘>Do</td>
-                            <td class=’calendar_day‘>Fr</td>
-                            <td class=’calendar_day‘>Sa</td>
-                            <td class=’calendar_day‘>So</td>
-                        </tr>
-                        <tr>
-                            <td class=’calendar_entry‘ id=’calendar_entry_1′>-x-</td>
-                            <td class=’calendar_entry‘ id=’calendar_entry_2′>-x-</td>
-                            <td class=’calendar_entry‘ id=’calendar_entry_3′>-x-</td>
-                            <td class=’calendar_entry‘ id=’calendar_entry_4′>-x-</td>
-                            <td class=’calendar_entry‘ id=’calendar_entry_5′>-x-</td>
-                            <td class=’calendar_entry‘ id=’calendar_entry_6′>-x-</td>
-                            <td class=’calendar_entry‘ id=’calendar_entry_7′>-x-</td>
-                        </tr>
-                        <tr>
-                            <td class=’calendar_entry‘ id=’calendar_entry_8′>-x-</td>
-                            <td class=’calendar_entry‘ id=’calendar_entry_9′>-x-</td>
-                            <td class=’calendar_entry‘ id=’calendar_entry_10′>-x-</td>
-                            <td class=’calendar_entry‘ id=’calendar_entry_11′>-x-</td>
-                            <td class=’calendar_entry‘ id=’calendar_entry_12′>-x-</td>
-                            <td class=’calendar_entry‘ id=’calendar_entry_13′>-x-</td>
-                            <td class=’calendar_entry‘ id=’calendar_entry_14′>-x-</td>
-                        </tr>
-                        <tr>
-                            <td class=’calendar_entry‘ id=’calendar_entry_15′>-x-</td>
-                            <td class=’calendar_entry‘ id=’calendar_entry_16′>-x-</td>
-                            <td class=’calendar_entry‘ id=’calendar_entry_17′>-x-</td>
-                            <td class=’calendar_entry‘ id=’calendar_entry_18′>-x-</td>
-                            <td class=’calendar_entry‘ id=’calendar_entry_19′>-x-</td>
-                            <td class=’calendar_entry‘ id=’calendar_entry_20′>-x-</td>
-                            <td class=’calendar_entry‘ id=’calendar_entry_21′>-x-</td>
-                        </tr>
-                        <tr>
-                            <td class=’calendar_entry‘ id=’calendar_entry_22′>-x-</td>
-                            <td class=’calendar_entry‘ id=’calendar_entry_23′>-x-</td>
-                            <td class=’calendar_entry‘ id=’calendar_entry_24′>-x-</td>
-                            <td class=’calendar_entry‘ id=’calendar_entry_25′>-x-</td>
-                            <td class=’calendar_entry‘ id=’calendar_entry_26′>-x-</td>
-                            <td class=’calendar_entry‘ id=’calendar_entry_27′>-x-</td>
-                            <td class=’calendar_entry‘ id=’calendar_entry_28′>-x-</td>
-                        </tr>
-                        <tr>
-                            <td class=’calendar_entry‘ id=’calendar_entry_29′>-x-</td>
-                            <td class=’calendar_entry‘ id=’calendar_entry_30′>-x-</td>
-                            <td class=’calendar_entry‘ id=’calendar_entry_31′>-x-</td>
-                            <td class=’calendar_entry‘ id=’calendar_entry_32′>-x-</td>
-                            <td class=’calendar_entry‘ id=’calendar_entry_33′>-x-</td>
-                            <td class=’calendar_entry‘ id=’calendar_entry_34′>-x-</td>
-                            <td class=’calendar_entry‘ id=’calendar_entry_35′>-x-</td>
-                        </tr>
-                        <tr>
-                            <td class=’calendar_entry‘ id=’calendar_entry_36′>-x-</td>
-                            <td class=’calendar_entry‘ id=’calendar_entry_37′>-x-</td>
-                            <td class=’calendar_entry‘ id=’calendar_entry_38′>-x-</td>
-                            <td class=’calendar_entry‘ id=’calendar_entry_39′>-x-</td>
-                            <td class=’calendar_entry‘ id=’calendar_entry_40′>-x-</td>
-                            <td class=’calendar_entry‘ id=’calendar_entry_41′>-x-</td>
-                            <td class=’calendar_entry‘ id=’calendar_entry_42′>-x-</td>
-                        </tr>
-                    </table>
-                        <input type="button" name="Erstellen" value="Erstellen"> <input type="button" name="Bearbeiten" value="Bearbeiten"> <input type="button" name="Löschen" value="Löschen">
-                    </ul></td>
-                </tr>
-                <tr>
-                    <td><ul><input type="button" name="Thema verlassen" value="Thema verlassen" onclick="self.location.href='WebTech%20Mockup2.html'"> <input type="button" name="Themenwahl" value="Themenwahl" onclick="self.location.href='WebTech%20Mockup2.html'"> </ul></td>
-                </tr>
+        <article>
+            <h1>WebTech</h1>
+            <div class="grid-main">
+                <div class="item1">
+                    <h1>Beschreibung</h1>
+                </div>
+                <div class="item1">
+                    <h1>Gruppenmitglieder</h1>
+                </div>
+                <div class="item1">
+                    <h1>Links</h1>
+                </div>
+                <div class="item1">
+                    <h1>Meilensteine</h1>
+                </div>
+            </div>
+        </article>
 
-            </table>
-
-        </td>
-
-    </tr>
-
-</table>
+        <aside class="sidebar-right">
+            <h1>Filler</h1>
+        </aside>
+    </div>
+</section>
 
 </body>
 </html>
