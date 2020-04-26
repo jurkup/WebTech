@@ -10,7 +10,7 @@ body{
   background-repeat: no-repeat;
 }
 section{
-  padding: 20px;
+  padding: 1em 0px 5px 0em;
 }
 
 ul {
@@ -21,8 +21,8 @@ ul {
 }
 
 li{
-  display: inline-block;
-  margin: 0 20px 0 20px;
+  display: flow;
+  margin: 10px 20px 20px 20px;
 }
 
 .box1{
@@ -115,8 +115,55 @@ li{
   background: #2ecc71;
 }
 
+.grid-main{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: repeat(2, 200px);
+  grid-gap: 1em;
+  padding: 5px;
+}
 
+.grid-main > div {
+  text-align: center;
+  border-style: groove;
+}
 
+.grid {
+  display: grid;
+  grid-template-columns: 250px auto 250px;
+  grid-template-rows: repeat(1, 500px);
+  grid-gap: 1em;
+  padding: 0px;
+
+}
+
+.grid h1 {
+  color: white;
+}
+
+.grid font {
+  color: deeppink;
+}
+
+.sidebar-left {
+  padding: 0px 5px 5px 20px;
+  background-color: darkgray;
+  grid-row: 1;
+  grid-column: 1/2;
+}
+article {
+  padding: 0px 5px 5px 20px;
+  background-color: darkgray;
+  grid-row: 1;
+  grid-column: 2/3;
+}
+
+.sidebar-right{
+  padding: 0px 5px 5px 20px;
+  background-color: darkgray;
+  grid-row: 1;
+  grid-column: 3 /4;
+}
 
 
 /* Add a black background color to the top navigation */
