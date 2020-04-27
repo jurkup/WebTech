@@ -160,6 +160,27 @@ article {
   grid-column: 2/3;
 }
 
+article table{
+  border-collapse: collapse;
+  width: 100%;
+}
+
+article th {
+  font-weight: bold;
+  text-align: left;
+  padding: 10px;
+  color: black;
+  border-bottom: 2px solid darkgray;
+}
+
+article td {
+  text-align: left;
+  padding: 10px;
+  font-weight: lighter;
+  color: #1c9dd9;
+  border-bottom: 1px solid darkgray;
+}
+
 .sidebar-right{
   padding: 0px 5px 5px 20px;
   background-color: lightgrey;
