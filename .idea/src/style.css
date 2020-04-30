@@ -130,8 +130,9 @@ li{
   padding: 0 2px 0 2px;
 }
 
-.grid-main > div
-
+.grid-main > div::-webkit-scrollbar {
+  display: none;
+}
 
 .grid {
   display: grid;
