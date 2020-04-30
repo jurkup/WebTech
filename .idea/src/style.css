@@ -115,17 +115,22 @@ li{
 
 .grid-main{
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 50% 50%;
   grid-template-rows: repeat(2, 200px);
   grid-gap: 1em;
-  padding: 5px;
+  padding: 15px;
 }
 
 .grid-main > div {
+  overflow: hidden;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
   text-align: left;
   border-style: groove;
   padding: 0 2px 0 2px;
 }
+
+.grid-main > div
 
 
 .grid {
@@ -154,7 +159,7 @@ li{
 }
 
 article {
-  padding: 0px 5px 5px 20px;
+  padding: 0px 20px 5px 20px;
   background-color: lightgrey;
   grid-row: 1;
   grid-column: 2/3;
@@ -176,7 +181,7 @@ article th {
 article td {
   text-align: left;
   padding: 10px;
-  font-weight: lighter;
+  font-weight: bold;
   color: #1c9dd9;
   border-bottom: 1px solid darkgray;
 }
