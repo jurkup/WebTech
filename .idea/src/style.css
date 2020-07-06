@@ -113,12 +113,16 @@ li{
   background: #2ecc71;
 }
 
+
+
+/*Grid Layout*/
 .grid-main{
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: repeat(2, 200px);
   grid-gap: 1em;
   padding: 15px;
+  background-color: whitesmoke;
 }
 
 .grid-main > div {
@@ -130,6 +134,7 @@ li{
   padding: 0 2px 0 2px;
 }
 
+/*Hide Scrollbar*/
 .grid-main > div::-webkit-scrollbar {
   display: none;
 }
@@ -137,21 +142,19 @@ li{
 .grid {
   display: grid;
   grid-template-columns: 15% auto 10%;
-  grid-template-rows: repeat(1, 500px);
+  grid-template-rows: repeat(1, minmax(600px , max-content));
   grid-gap: 1em;
   padding: 0px;
-
 }
 
 .grid h1 {
   color: black;
 }
 
-
 .sidebar-left {
-  border-bottom: 2px solit darkgray;
+  border-bottom: 2px solit lightgray;
   /*padding: 1px 5px 5px 20px;*/
-  background-color: lightgrey;
+  background-color: whitesmoke;
   grid-row: 1;
   grid-column: 1/2;
 }
@@ -161,7 +164,7 @@ li{
 
 article {
   padding: 0px 20px 5px 20px;
-  background-color: lightgrey;
+  background-color: whitesmoke;
   grid-row: 1;
   grid-column: 2/3;
 }
@@ -184,20 +187,19 @@ article td {
   padding: 10px;
   font-weight: bold;
   color: #1c9dd9;
-  border-bottom: 1px solid darkgray;
+  border-bottom: 1px solid whitesmoke;
 }
 
 .sidebar-right{
   padding: 0px 5px 5px 20px;
-  background-color: lightgrey;
+  background-color: whitesmoke;
   grid-row: 1;
   grid-column: 3 /4;
 }
 
-
-/* Add a black background color to the top navigation */
+/* Add a black background color to navigation bar */
 .topnav {
-  background-color: lightgrey;
+  background-color: whitesmoke;
   overflow: hidden;
 }
 
@@ -213,8 +215,8 @@ article td {
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: slategrey;
-  color: whitesmoke;
+  background-color: lightgray;
+  color: black;
 }
 
 /* Add a color to the active/current link */
@@ -225,7 +227,7 @@ article td {
 
 /* SideNav*/
 .Sidenav {
-  background-color: lightgrey;
+  background-color: whitesmoke;
   overflow: hidden;
 }
 
@@ -242,8 +244,8 @@ article td {
 
 /* Change the color of links on hover */
 .Sidenav a:hover {
-  background-color: slategrey;
-  color: whitesmoke;
+  background-color: lightgray;
+  color: black;
 }
 
 /* Add a color to the active/current link */
