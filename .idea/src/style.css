@@ -115,29 +115,8 @@ li{
 
 
 
-/*Grid Layout*/
-.grid-main{
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: repeat(2, 200px);
-  grid-gap: 1em;
-  padding: 15px;
-  background-color: whitesmoke;
-}
 
-.grid-main > div {
-  overflow: hidden;
-  overflow-y: scroll;
-  -ms-overflow-style: none;
-  text-align: left;
-  border-style: groove;
-  padding: 0 2px 0 2px;
-}
 
-/*Hide Scrollbar*/
-.grid-main > div::-webkit-scrollbar {
-  display: none;
-}
 
 .grid {
   display: grid;
@@ -195,6 +174,30 @@ article td {
   background-color: whitesmoke;
   grid-row: 1;
   grid-column: 3 /4;
+}
+
+/*Grid Layout*/
+.grid-modul{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: repeat(2, 200px);
+  grid-gap: 1em;
+  padding: 15px;
+  background-color: whitesmoke;
+}
+
+.grid-modul > div {
+  overflow: hidden;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  text-align: left;
+  border-style: groove;
+  padding: 0 2px 0 2px;
+}
+
+/*Hide Scrollbar*/
+.grid-modul > div::-webkit-scrollbar {
+  display: none;
 }
 
 /* Add a black background color to navigation bar */
