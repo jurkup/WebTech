@@ -114,10 +114,7 @@ li{
 }
 
 
-
-
-
-
+/*Grid layout*/
 .grid {
   display: grid;
   grid-template-columns: 15% auto 10%;
@@ -176,7 +173,7 @@ article td {
   grid-column: 3 /4;
 }
 
-/*Grid Layout*/
+/*Grid layout in group*/
 .grid-modul{
   display: grid;
   grid-template-columns: 50% 50%;
