@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/WebTechProjekt.iml" filepath="$PROJECT_DIR$/WebTechProjekt.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/WebTechGit.iml" filepath="$PROJECT_DIR$/.idea/WebTechGit.iml" />
     </modules>
   </component>
 </project>
