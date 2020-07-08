@@ -152,14 +152,14 @@ article table{
 
 article th {
   font-weight: bold;
-  text-align: left;
+  /*text-align: left;*/
   padding: 10px;
   color: black;
   border-bottom: 2px solid darkgray;
 }
 
 article td {
-  text-align: left;
+  /*text-align: left;*/
   padding: 10px;
   font-weight: bold;
   color: #1c9dd9;
