@@ -41,8 +41,8 @@
                     <p>Hier steht die Beschreibung der Gruppenarbeit um Unklarheiten zu verhindern</p>
                 </div>
                 <div class="item1">
-                    <h1>Gruppenmitglieder</h1>
-                    <table>
+                    <h1>Gruppenmitglieder </h1>
+                    <table border="0" cellspacing="0" cellpadding="0" width="100%">
                         <tr>
                             <td>Mitglied 1</td>
                         </tr>
@@ -55,12 +55,21 @@
                         <tr>
                             <td>Mitglied 4</td>
                         </tr>
+                        <tr>
+                            <td align="left" width="50%">
+                                <input type="submit" name="enterGroup" value="Gruppe beitreten">
+                            </td>
+                            <td align="right" width="50%">
+                                <input type="submit" name="leaveGroup" value="Gruppe verlassen">
+                            </td>
+                        </tr>
 
                     </table>
                 </div>
                 <div class="item1">
                     <h1>Links</h1>
                     <table>
+
                         <tr>
                             <td><a href="https://www.google.de/">Quelle des Wissens</a></td>
                         </tr>
@@ -73,6 +82,15 @@
                         <tr>
                             <td><a href="Index.html">Startseite</a></td>
                         </tr>
+
+                    </table>
+                    <table>
+                        <tr>
+                            <td>Linktitel: <input id="Linktitel" type="text" name="Linktitel" align="right"></td>
+                            <td>Link: <input id="Link" type="text" name="Link"></td>
+                            <td><input type="submit" name="saveLink" value="Link speichern"></td>
+                        </tr>
+
                     </table>
                 </div>
                 <div class="item1">
@@ -99,12 +117,60 @@
                             <td>35.06.2020</td>
                         </tr>
                     </table>
+                    <br>
+                    <table>
+                        <tr>
+                            <th>Neuer Meilenstein</th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <td>Name: <input id="milestoneName" type="text" name="milestoneName" align="right"></td>
+                            <td>Datum: <input type="date" name="milestoneDate" id="milestoneDate"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="submit" name="newMilestone" value="Meilenstein anlegen"></td>
+                        </tr>
+
+                    </table>
                 </div>
             </div>
         </article>
 
         <aside class="sidebar-right">
-            <h1>Filler</h1>
+            <h1>Bearbeiten</h1>
+
+            <table>
+                <tr>
+                    <th>Neuer Meilenstein</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>Name: <input id="milestoneName" type="text" name="milestoneName" align="right"></td>
+                </tr>
+                <tr>
+                    <td>Datum: <input type="date" name="milestoneDate" id="milestoneDate"></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" name="newMilestone" value="Meilenstein anlegen"></td>
+                </tr>
+            </table>
+            <br>
+            <br>
+
+            <table>
+                <tr>
+                    <th>Neuer Link</th>
+                </tr>
+                <tr>
+                    <td>Linktitel: <input id="Linktitel" type="text" name="Linktitel" align="right"></td>
+                </tr>
+                <tr>
+                    <td>Link: <input id="Link" type="text" name="Link"></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" name="saveLink" value="Link speichern"></td>
+                </tr>
+            </table>
         </aside>
     </div>
 </section>

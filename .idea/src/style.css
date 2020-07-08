@@ -117,7 +117,7 @@ li{
 /*Grid layout*/
 .grid {
   display: grid;
-  grid-template-columns: 15% auto 10%;
+  grid-template-columns: 15% auto 15%;
   grid-template-rows: repeat(1, minmax(600px , max-content));
   grid-gap: 1em;
   padding: 0px;
