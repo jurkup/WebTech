@@ -177,7 +177,7 @@ article td {
 .grid-modul{
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: repeat(2, 200px);
+  grid-template-rows: repeat(2, 250px);
   grid-gap: 1em;
   padding: 15px;
   background-color: whitesmoke;
