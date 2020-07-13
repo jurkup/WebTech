@@ -4,7 +4,7 @@ function getConnection() {
     let connection = mysql.createConnection({
         host: "localhost",
         user: "testuser",
-        password: "testuser",
+        password: "5555",
         database: "testdb",
     });
     return connection;
@@ -15,25 +15,12 @@ function getConnection() {
  * @param columnName to update
  * @param entryChange new information
  */
-function insertNewModul(name, beginn,ende){
-    let con = getConnection();
-    con.connect(function(err) {
-        if (err) throw err;
-        var sqlStatment = "INSERT INTO modul (Name, Beginn, Ende) VALUES (" +
-            Modul.name + ", " +
-            Modul.beginn + " " +
-            Modul.ende + ";";
-        con.query(sqlStatment, function (err, result) {
-            if (err) throw err;
-            console.log(result.affectedRows + " record(s) updated");
-        });
-    });
-}
+
 
 function newModul() {
 
     class Modul {
-        constructor(modul_id, name, beschreibung,beginn, ende) {
+        constructor(name, beginn, ende) {
             this.name = name;
             this.beginn = beginn;
             this.ende = ende;
@@ -45,11 +32,21 @@ function newModul() {
     }
 
     modul = new Modul(document.getElementById("modulName").value,
-        document.getElementById(modulBeginn).value,
-        document.getElementById(modulEnde).value
+        document.getElementById("modulBeginn").value,
+        document.getElementById("modulEnde").value
     );
     insertNewModul();
 
-
-
+}
+function insertNewModul(name, beginn, ende){
+    let con = getConnection();
+    con.connect(function(err) {
+        if (err) throw err;
+        console.log("Connected!");
+        var sql = "INSERT INTO modul (Name, Beginn, Ende ) VALUES ('SimMod', '20.20.2020', '21.21.2121');";
+        con.query(sql, function (err, result) {
+            if (err) throw err;
+            console.log("1 record inserted");
+        });
+    });
 }
