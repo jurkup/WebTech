@@ -1,12 +1,15 @@
 var mysql = require('mysql');
 
+
 function getConnection() {
     let connection = mysql.createConnection({
         host: "localhost",
         user: "testuser",
-        password: "5555",
+        password: "0000",
         database: "testdb",
+
     });
+    console.log('Läuft');
     return connection;
 }
 /**
@@ -15,8 +18,6 @@ function getConnection() {
  * @param columnName to update
  * @param entryChange new information
  */
-
-
 function newModul() {
 
     class Modul {
@@ -35,18 +36,20 @@ function newModul() {
         document.getElementById("modulBeginn").value,
         document.getElementById("modulEnde").value
     );
+    console.log(modul);
     insertNewModul();
 
 }
-function insertNewModul(name, beginn, ende){
+function insertNewModul(){
     let con = getConnection();
     con.connect(function(err) {
         if (err) throw err;
-        console.log("Connected!");
-        var sql = "INSERT INTO modul (Name, Beginn, Ende ) VALUES ('SimMod', '20.20.2020', '21.21.2121');";
+        //var sql = "INSERT INTO modul (Name, Beginn, Ende ) VALUES ('"+ modul.name +"', '"+ beginn + "', '" + ende+"');";
+        var sql = "INSERT INTO modul (Name, Beginn, Ende ) VALUES ('Es', 'funktioniert', 'Juhu');";
         con.query(sql, function (err, result) {
             if (err) throw err;
-            console.log("1 record inserted");
+            console.log(result.affectedRows + " record(s) updated");
         });
     });
+
 }
