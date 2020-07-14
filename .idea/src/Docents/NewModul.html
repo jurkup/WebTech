@@ -37,23 +37,22 @@
         </aside>
 
         <article>
-            <form action="insertModulIntoDB.php" method="get">
             <h1>Neues Modul erstellen</h1>
 
             <hr>
             Modulname: <br>
-            <input id="titel" type="text" name="titel">
+            <input id="modulName" type="text" name="modulName">
             <br><br>
 
             Modulbeginn: <br>
-            <input type="date" name="modulStart" id="modulStart"> <br><br>
+            <input type="date" name="modulBeginn" id="modulBeginn"> <br><br>
 
             Modulende: <br>
-            <input type="date" name="modulEnd" id="modulEnd"> <br><br>
+            <input type="date" name="modulEnde" id="modulEnde"> <br><br>
             <br>
 
-            <input type="submit" name="saveModul" value="Modul Speichern">
-            </form>
+            <input type="submit" onclick="newModul()" name="saveModul" value="Modul Speichern">
+
         </article>
 
         <aside class="sidebar-right">

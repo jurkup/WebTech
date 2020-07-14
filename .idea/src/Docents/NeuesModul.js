@@ -1,4 +1,4 @@
-var mysql = require('mysql');
+/*var mysql = require('mysql');
 
 
 let modulName = document.getElementById('modulName').value;
@@ -19,12 +19,8 @@ function getConnection() {
     console.log('Läuft');
     return connection;
 }
-/**
- *
- * @param id user to change data
- * @param columnName to update
- * @param entryChange new information
- */
+*/
+
 function newModul() {
 
     class Modul {
@@ -43,8 +39,23 @@ function newModul() {
         document.getElementById("modulBeginn").value,
         document.getElementById("modulEnde").value
     );
+    console.log(modul);
 
-    insertNewModul();
+    const options = {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify(modul)
+
+    }
+    fetch("/NewModul", options)
+        .then(response => response.json())
+        .then(data => {
+
+            alert(data.NewModul);
+
+        });
+
+    //insertNewModul();
 
 }
 function insertNewModul(){

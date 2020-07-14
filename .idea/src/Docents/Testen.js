@@ -1,5 +1,7 @@
 const http = require("http");
 const mysql = require("mysql");
+const fs = require('fs');
+const config = JSON.parse(fs.readdirSync(/../))
 
 console.log('verbindungsaufbau');
 
