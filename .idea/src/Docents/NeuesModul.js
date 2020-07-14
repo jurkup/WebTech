@@ -1,11 +1,18 @@
 var mysql = require('mysql');
 
 
+let modulName = document.getElementById('modulName').value;
+let modulBeginn = document.getElementById('modulBeginn').value;
+let modulEnde = document.getElementById('modulEnde').value;
+function writeName() {
+    console.log(modulName);
+}
+
 function getConnection() {
     let connection = mysql.createConnection({
         host: "localhost",
         user: "testuser",
-        password: "0000",
+        password: "55555",
         database: "testdb",
 
     });
@@ -36,7 +43,7 @@ function newModul() {
         document.getElementById("modulBeginn").value,
         document.getElementById("modulEnde").value
     );
-    console.log(modul);
+
     insertNewModul();
 
 }
