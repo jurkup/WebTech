@@ -1,19 +1,16 @@
-const express = require("express");
-const session = require("express-session");
-const bodyParser = require("body-parser");
-const fs = require('fs');
-const config = JSON.parse(fs.readFileSync("Connection.json"));
-const app = express();
+const http = require("http");
+const mysql = require("mysql");
 
-let http = require("http");
-let url = require("url");
-let mysql = require("mysql");
+console.log('verbindungsaufbau');
 
-let connection = mysql.createConnection(
-    {
-        host: config.host,
-        user: config.user,
-        password: config.password,
-        database: config.database
-    }
-);
+var con = mysql.createConnection({
+    host: "localhost",
+    user: "admin",
+    password: "password",
+    database: "testdb"
+});
+
+con.connect(function (err) {
+    if(err) throw err;
+    console.log('Connected!');
+});
