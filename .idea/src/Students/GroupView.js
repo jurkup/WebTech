@@ -8,3 +8,7 @@ var NewMilestoneName = document.getElementById("milestoneName").value;
 var milestoneDate = document.getElementById("milestoneDate").value;
 var Linktitel = document.getElementById("Linktitel").value;
 var Link = document.getElementById("Link").value;
+
+
+
+

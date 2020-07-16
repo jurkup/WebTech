@@ -51,7 +51,7 @@ function newModul() {
         .then(response => response.json())
         .then(data => {
 
-            alert(data.NewModul);
+            alert(data.newModul);
 
         });
 
