@@ -33,3 +33,81 @@ app.post("/NewModul", (request, response) => {
             }
         })
 })
+
+app.post("/CreateNewTopic", (request, response) => {
+    connection.query("INSERT INTO THEMA(Title,Description,MaxParticipants,BeginRegistration,EndRegistration VALUES("
+        + '"' + request.body.titel + '",'
+        + '"' + request.body.beschreibung + '",'
+        + '"' + request.body.maxMembers + '",'
+        + '"' + request.body.BeginAnmeldung + '",'
+        + '"' + request.body.EndAnmeldung,
+        function (err) {
+            if (err)
+                throw err;
+            else {
+                console.log("Topic created");
+            }
+
+        }
+    )
+
+})
+
+app.post("/GroupOverview", (request, response) => {
+    connection.query("SELECT Modulname, Thementitel, Mitgliederanzahl, MaximaleMitglieder from Themen where"
+        + '"' + request.body.name + '",'
+        + '"' + request.body.beginn + '",'
+        + '"' + request.body.ende,
+        function (err) {
+            if (err)
+                throw err;
+            else {
+                //console.log("Modul created"); Muss hier was hin?
+            }
+        })
+})
+
+app.post("/Home", (request, response) => {
+    connection.query("SELECT Modulname, GruppenID, Betreff from Benachichtigungen where"
+        + '"' + request.body.Modulname + '",'
+        + '"' + request.body.GruppenID + '",'
+        + '"' + request.body.Betreff,
+        function (err) {
+            if (err)
+                throw err;
+            else {
+              //  console.log("Modul created");
+            }
+        })
+})
+
+app.post("/GroupView", (request, response) => {
+    connection.query("SELECT Thementitel, Beschreibung, Mitglieder, Links, Meilensteine from Themen where"
+        + '"' + request.body.Themenname + '",'
+        + '"' + request.body.Beschreibung + '",'
+        + '"' + request.body.Mitglieder + '",'
+        + '"' + request.body.Links + '",'
+        + '"' + request.body.Meilensteine,
+        function (err) {
+            if (err)
+                throw err;
+            else {
+                //console.log("Modul created");
+            }
+        })
+})
+
+app.post("/ThemeOverview", (request, response) => {
+    connection.query("SELECT Modulname, Thementitel, Mitgliederanzahl, MaximaleMitglieder from Themen where"
+        + '"' + request.body.Modulname + '",'
+        + '"' + request.body.Thementitel + '",'
+        + '"' + request.body.Mitgliederanzahl + '",'
+        + '"' + request.body.MaximaleMitglieder,
+        function (err) {
+            if (err)
+                throw err;
+            else {
+               // console.log("Modul created");
+            }
+        })
+})

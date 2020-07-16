@@ -55,15 +55,15 @@ function newModul() {
 
         });
 
-    //insertNewModul();
+    //insertNewModul();                         <-- Wieso ist das rauskommentiert?
 
 }
 function insertNewModul(){
     let con = getConnection();
     con.connect(function(err) {
         if (err) throw err;
-        //var sql = "INSERT INTO modul (Name, Beginn, Ende ) VALUES ('"+ modul.name +"', '"+ beginn + "', '" + ende+"');";
-        var sql = "INSERT INTO modul (Name, Beginn, Ende ) VALUES ('Es', 'funktioniert', 'Juhu');";
+        var sql = "INSERT INTO modul (Name, Beginn, Ende ) VALUES ('"+ modul.name +"', '"+ beginn + "', '" + ende+"');";
+        //var sql = "INSERT INTO modul (Name, Beginn, Ende ) VALUES ('Es', 'funktioniert', 'Juhu');";
         con.query(sql, function (err, result) {
             if (err) throw err;
             console.log(result.affectedRows + " record(s) updated");
