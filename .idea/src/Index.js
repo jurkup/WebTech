@@ -55,14 +55,17 @@ app.post("/CreateNewTopic", (request, response) => {
 
 app.post("/GroupOverview", (request, response) => {
     connection.query("SELECT Modulname, Thementitel, Mitgliederanzahl, MaximaleMitglieder from Themen where"
-        + '"' + request.body.name + '",'
-        + '"' + request.body.beginn + '",'
-        + '"' + request.body.ende,
+        + '"' + request.body.Modulname + '",'
+        + '"' + request.body.Thementitel + '",'
+        + '"' + request.body.Mitgliederanzahl + '",'
+        + '"' + request.body.MaximaleMitglieder,
         function (err) {
             if (err)
                 throw err;
             else {
-                //console.log("Modul created"); Muss hier was hin?
+                //console.log("Modul created");
+                //
+                // Muss hier was hin?
             }
         })
 })

@@ -35,7 +35,7 @@ function groupOverview() {
         .then(response => response.json())
         .then(data => {
 
-            alert(data.NewModul);
+            alert(data.Overview);
 
         });
 }
